@@ -70,7 +70,7 @@ st.markdown("""
 # Cargar preguntas
 @st.cache_data
 def cargar_preguntas():
-    with open('/home/ubuntu/preguntas.json', 'r', encoding='utf-8') as f:
+    with open('preguntas.json', 'r', encoding='utf-8') as f:
         datos = json.load(f)
     return datos['preguntas']
 
